@@ -6,7 +6,7 @@ mkdir -p /root/.config/autostart
 echo "[Desktop Entry]
 Type=Application
 Name=Chromium Kiosk
-Exec=chromium-browser --kiosk --no-first-run --disable-infobars [invalid url, do not cite]
+Exec=chromium-browser --kiosk --no-first-run --disable-infobars http://localhost:8123
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true" > /root/.config/autostart/chromium.desktop
