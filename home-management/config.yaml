@@ -1,9 +1,10 @@
-name: Home Management
-version: "1.0"
-slug: home_management
-description: Configures desktop and Home Assistant interface on HDMI
+name: "Home Management"
+version: "1.0.0"
+slug: "home_management"
+description: "A custom add-on for home management"
 arch:
-  - arm64
-startup: system
-boot: auto
-image: ghcr.io/ecokeley/home-management
+  - amd64
+startup: "application"
+boot: "auto"
+ports:
+  - "8080:8080"
